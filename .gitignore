@@ -5,3 +5,4 @@ __pycache__/
 .vscode/
 .phase_shifted_net/
 main/demo_results/BCancerW_Kfolds/
+main/resources
