@@ -1,14 +1,11 @@
-# Binaries and exe
+# Eseguibili e oggetti compilati (ovunque si trovino)
 *.exe
 *.o
 *.out
-bin/
-build/
-resources/
 
-# VS Code folders
+# Cache Python e VS Code
+__pycache__/
 .vscode/
-*.swp
 
-# Temporary files / log
-*.log
+# File generati dinamicamente dai fold (mantiene però BCancerW.csv!)
+main/demo_results/BCancerW_Kfolds/

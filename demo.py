@@ -20,7 +20,7 @@ runs_num = 1
 """ dataset_path = resources_path / "sin(2x) + cos(3x) - dataset.csv"
 loss_path = resources_path / "sin(2x) + cos(3x) - loss.csv"
 curve_path = resources_path / "sin(2x) + cos(3x) - curve.csv" """
-exe_path = bin_path / "PhaseShiftSineNet.exe"
+exe_path = base_path / "PhaseShiftSineNet.exe"
 source_path = bin_path / "PhaseShiftSineNet.c"
 
 # Hyperparameters
@@ -45,7 +45,7 @@ verbose = "0" # {Full text : 1, Short description : 0}
 print("C source file compiling...")
 # Compiles the source. Overwrites the macro to dinamically handle C code
 subprocess.run([
-    "gcc", str(source_path), "-o", str(exe_path), "-lm",  #-lm is required for math functions
+    "gcc", "-O3", str(source_path), "-o", str(exe_path), "-lm",  #-lm is required for math functions
     f"-DLEARNING_RATE={learn_rate}f",
     f"-DLEARNING_DECAY={learn_decay}f",
     f"-DDECAY_STEP={decay_step}",
