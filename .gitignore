@@ -1,0 +1,13 @@
+# Binaries and exe
+*.exe
+*.o
+*.out
+bin/
+build/
+
+# VS Code folders
+.vscode/
+*.swp
+
+# Temporary files / log
+*.log
