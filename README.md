@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C99%20%7C%20Python-blue.svg)
 ![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)
-![Build](https://img.shields.io/badge/Build-GCC%20-O3-orange.svg)
+![Build](https://img.shields.io/badge/Build-GCC%20--O3-orange.svg)
 
 A custom supervised Deep Learning architecture implemented from scratch in **pure C** (zero external ML/math library dependencies), orchestrated via a **Python** automation pipeline for stratified $k$-fold cross-validation and performance evaluation.
 
@@ -59,3 +59,4 @@ python demo.py
 ```
 
 The script compiles `main/bin/src/PhaseShiftSineNet.c` with `-O3` optimization flags, runs the 5-fold training/testing cycle on `main/demo_results/BCancerW.csv`, prints the mean accuracy to the console, and renders the ROC-AUC curve.
+The confusion matrices and loss dump files for each fold are stored into `main/demo_results/` folder.

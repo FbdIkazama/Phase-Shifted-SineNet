@@ -1,11 +1,7 @@
-# Eseguibili e oggetti compilati (ovunque si trovino)
 *.exe
 *.o
 *.out
-
-# Cache Python e VS Code
 __pycache__/
 .vscode/
-
-# File generati dinamicamente dai fold (mantiene però BCancerW.csv!)
+.phase_shifted_net/
 main/demo_results/BCancerW_Kfolds/
