@@ -4,6 +4,7 @@
 *.out
 bin/
 build/
+resources/
 
 # VS Code folders
 .vscode/
